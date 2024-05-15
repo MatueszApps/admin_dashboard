@@ -1,22 +1,26 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-size: 10px;
 }
 
-
-.left-section {
-    background-color: #348ceb;
-    width: 20%;
-    height: 100vh;
-    padding: 15px;
-    margin: 0;
-    color: white;
+.container {
+    display: flex;
+    width: 100%;
+    height: 100vh; /* Zależnie od potrzeb */
 }
 
-.left-section h2{
+.left-section {
+    flex: 0 0 20%; /* 20% szerokości bez możliwości zmiany */
+    background-color: #348ceb;
+    color: white;
+    padding: 15px;
+}
+
+.left-section h2 {
     font-size: 4rem;
     padding: 10px 35px;
+    display: flex;
 }
 
 .menu, .submenu {
@@ -25,19 +29,97 @@
 }
 
 .menu li, .submenu li {
-    padding:  10px 35px;
+    padding: 10px 35px;
     margin-right: 15px;
-    background-color: #f4f4f4;
-    border: none;
     background-color: #348ceb;
     font-size: 2rem;
+    display: flex;
 }
 
 .mdi {
-    font-size: 24px; /* Increase the font size as needed */
-    margin-right: 1.5rem;
+    font-size: 24px;
+    margin-right: 1rem;
 }
 
-.mdi-view-dashboard{
+.mdi-view-dashboard {
     font-size: 4rem;
+}
+
+.upper-section {
+    flex: 1; /* Zajmuje resztę dostępnej przestrzeni */
+    display: flex;
+    height: 25%;
+    box-shadow: 0 10px 20px -10px rgba(0,0,0,0.5);
+}
+
+.upper-grid {
+    display: grid;
+    grid-template-columns: /* 12 kolumn dla większej elastyczności */
+    width: 100%;
+  
+}
+
+
+.upper-grid button {
+    background-color: #348ceb;
+    border: none;
+    font-size: 1.5rem;
+    margin: 50px 10px;
+    border-radius: 2rem;
+    color: white;
+}
+
+.mdi-search-web, .mdi-bell-alert-outline{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+.upper-grid{
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
+}
+
+
+.search-bar{
+    background-color: #f7f5f5;
+    border: none;
+    border-radius: 2rem;
+    margin: 2rem;
+}
+
+.small_logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    margin: 2rem;
+
+}
+
+.upper-grid h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin: 1rem;
+}
+
+.big_logo {
+    height: 100px;
+    display: flex;
+    justify-content: flex-end;
+    margin: 30px 10px;
+}
+
+
+
+
+.small_text{
+    display: flex;
+    align-items: center;
+    font-size: 3rem;
+    margin-left: 10px;
 }

@@ -32,3 +32,12 @@
     background-color: #348ceb;
     font-size: 2rem;
 }
+
+.mdi {
+    font-size: 24px; /* Increase the font size as needed */
+    margin-right: 1.5rem;
+}
+
+.mdi-view-dashboard{
+    font-size: 4rem;
+}
